@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+p {
+  line-height: 170%;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  color: var(--white);
+}
+.headline {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.subheadline {
+  text-align: center;
+  line-height: 170%;
+}
+.h2-heading--dark {
+  color: var(--dark-font);
+}
+.h2-heading--dark::after {
+  background-color: var(--dark-font) !important;
+}
+.h2-heading {
+  position: relative;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+.h2-heading::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  display: block;
+  background-color: var(--white);
+  bottom: -5px;
+  left: 0;
+  width: min(30%, 100px);
+}
+.h3-heading {
+  text-transform: uppercase;
+  color: var(--white);
+}
+.accordion-heading {
+  position: absolute;
+  font-weight: 500;
+  font-size: clamp(0.4rem, 4.5vw, 1.5rem);
+  text-align: center;
+  color: var(--dark-font);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.accordion-content p {
+  color: var(--dark-font);
+}
+.h2-heading--center {
+  z-index: 2;
+  margin-inline: auto;
+  text-align: center;
+}
+.h2-heading--center::after {
+  transform: translateX(-50%);
+  left: 50%;
+}
+.footer__heading {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.page-heading {
+  font-size: clamp(2rem, 7vw, 2.5rem);
+  color: var(--dark-font);
+}
+.aside-category-heading {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.category-heading {
+  color: var(--dark-font);
+  text-transform: capitalize;
+}
+.contact__first-paragraph {
+  margin-bottom: 1rem;
+}

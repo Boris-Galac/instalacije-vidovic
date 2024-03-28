@@ -1,0 +1,17 @@
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.breadcrumb-link {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--dark-font);
+  text-transform: uppercase;
+}
+.breadcrumb-link--active {
+  font-weight: 400;
+  color: hsl(205, 10%, 35%);
+}

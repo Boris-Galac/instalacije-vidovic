@@ -1,0 +1,106 @@
+.container {
+  width: min(100% - 32px, 1024px);
+  margin-inline: auto;
+}
+.icon {
+  object-fit: contain;
+}
+.upper-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-block: 7vh;
+  background-color: var(--white);
+  overflow: hidden;
+}
+.upper-header--search {
+  position: relative;
+}
+.search-btn {
+  cursor: pointer;
+}
+.upper-header--search::after {
+  content: "";
+  position: absolute;
+  background: url("/wp-content/themes/galac/src/assets/images/search-illustration-overlay.svg")
+    no-repeat center center/cover;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 0;
+  opacity: 0.6;
+  aspect-ratio: 1;
+  width: 10rem;
+}
+@media (min-width: 1024px) {
+  .upper-header--search::after {
+    width: 15rem;
+  }
+}
+/* back to top */
+.back-to-top-btn {
+  background-color: black;
+  color: #fff;
+  border-radius: 100vmax;
+  aspect-ratio: 1;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  border: 2px solid hsl(0, 0%, 16%);
+  transition: 0.2s;
+  display: grid;
+  place-items: center;
+  z-index: 100;
+  cursor: pointer;
+}
+.back-to-top-btn img {
+  width: 2.5rem;
+}
+.back-to-top-btn:hover {
+  background-color: hsl(0, 0%, 7%);
+}
+.back-to-top-btn[data-visible="false"] {
+  opacity: 0;
+  pointer-events: none;
+}
+.back-to-top-btn[data-visible="true"] {
+  opacity: 1;
+  pointer-events: visible;
+}
+/* search overlay */
+
+.search-overlay {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 5000;
+}
+.search-overlay[data-active="false"] {
+  opacity: 0;
+  pointer-events: none;
+  animation: search-overlay-false 0.3s forwards;
+}
+@keyframes search-overlay-false {
+  from {
+    opacity: 1;
+    pointer-events: visible;
+  }
+  true {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+.search-overlay[data-active="true"] {
+  animation: search-overlay-true 0.3s forwards;
+}
+@keyframes search-overlay-true {
+  from {
+    opacity: 0;
+    pointer-events: none;
+  }
+  true {
+    opacity: 1;
+    pointer-events: visible;
+  }
+}

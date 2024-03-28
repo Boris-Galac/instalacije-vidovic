@@ -1,0 +1,63 @@
+.splide__list {
+  display: flex;
+}
+.splide__track {
+  overflow: hidden;
+  height: max-content;
+}
+.proof {
+  position: relative;
+  background: linear-gradient(
+    140deg,
+    rgba(255, 255, 255, 0.114),
+    rgba(251, 252, 252, 0.016)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.116);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  border-radius: 6px;
+  height: 300px;
+}
+.proof::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  aspect-ratio: 1;
+  width: 111px;
+  opacity: 0.1;
+  background: url("/wp-content/themes/galac/src/assets/icons/quotes-icon.svg")
+    no-repeat;
+  object-fit: contain;
+  z-index: 5;
+}
+.splide__arrow {
+  background: transparent !important;
+}
+.splide__arrow svg {
+  fill: #ffffff;
+  height: 3em;
+  width: 3em;
+}
+.splide__arrow--next {
+  right: -1em;
+}
+.splide__arrow--prev {
+  left: -1em;
+}
+.swiper.mySwiper {
+  height: max-content;
+}
+
+@media (min-width: 500px) {
+  .splide__list {
+    gap: 2rem;
+  }
+  .proof {
+    width: 100%;
+  }
+}

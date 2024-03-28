@@ -1,0 +1,148 @@
+button {
+  background-color: transparent;
+  border: 0;
+}
+
+/* ham btn */
+
+.ham {
+  position: absolute;
+  width: 2.5rem;
+  cursor: pointer;
+  aspect-ratio: 1.3/1;
+  right: 1.5rem;
+  transform: translateY(-50%);
+  top: 50%;
+  z-index: 10;
+  transition: 0.3s;
+}
+.ham-line {
+  pointer-events: none;
+}
+/* nav is closed */
+.ham[data-active="false"] .ham-line {
+  position: absolute;
+  height: 2px;
+  background-color: var(--white);
+  width: 100%;
+  transition: 0.3s;
+}
+.ham[data-active="false"] .ham-line:nth-child(1) {
+  top: 3px;
+}
+.ham[data-active="false"] .ham-line:nth-child(3) {
+  bottom: 2px;
+}
+/* nav is opened */
+.ham[data-active="true"] .ham-line {
+  position: absolute;
+  height: 2px;
+  background-color: var(--white);
+  width: 100%;
+  transition: 0.3s;
+}
+.ham[data-active="true"] .ham-line:nth-child(1) {
+  transform: rotate(45deg);
+}
+.ham[data-active="true"] .ham-line:nth-child(2) {
+  opacity: 0;
+}
+.ham[data-active="true"] .ham-line:nth-child(3) {
+  transform: rotate(-45deg);
+}
+.search-btn {
+  padding: 0.5rem;
+}
+
+.accordion-btn img {
+  transition: 0.25s;
+}
+.go-to-blog-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 1rem;
+  padding-inline: 2rem;
+  outline: 2px solid rgb(102, 112, 120);
+  background-color: var(--white);
+  width: max-content;
+  gap: 1rem;
+  color: var(--dark-font);
+  font-weight: 500;
+  margin-inline: auto;
+  margin-top: 3rem;
+  transition: 0.25s;
+}
+.go-to-blog-btn:hover {
+  background-color: rgb(237, 238, 238);
+}
+.galerija-btn {
+  background: linear-gradient(140deg, rgb(52, 52, 52), rgb(89, 89, 89));
+  padding-block: 1.2rem;
+  padding-inline: 1.8rem;
+  border-radius: 8px;
+  transition: 0.25s;
+}
+.galerija-btn img {
+  width: 40px;
+}
+.galerija-btn:hover {
+  scale: 1.1;
+}
+.scroll-down-btn {
+  position: absolute;
+  bottom: 2rem;
+  transform: translateX(-50%);
+  left: 50%;
+  animation: scroll-down-btn 1.5s forwards alternate ease-in-out infinite;
+}
+@keyframes scroll-down-btn {
+  to {
+    bottom: 3rem;
+  }
+}
+.upit-btn,
+.upit-offer-btn {
+  border-radius: 100vmax;
+  border: 2px solid var(--white);
+  color: #fff;
+  display: flex;
+  font: inherit;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  gap: 1rem;
+  font-weight: 500;
+  padding-inline: 1.5rem;
+  padding-block: 0.6rem;
+  background: linear-gradient(to right, hsl(120, 39%, 33%), hsl(120, 23%, 48%));
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.upit-offer-btn:hover {
+  background: linear-gradient(to right, hsl(120, 39%, 40%), hsl(120, 23%, 54%));
+}
+
+.upit-btn img {
+  width: 32px;
+}
+.pogledaj-proizvod-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid rgb(63, 219, 63);
+  background-color: rgb(69, 123, 69);
+  padding-block: 0.6rem;
+  padding-inline: 1.5rem;
+  justify-content: center;
+  width: 100%;
+  border-radius: 100vmax;
+  font-size: 14px;
+  margin-top: auto;
+  transition: 0.25s;
+}
+.pogledaj-proizvod-btn:hover {
+  background-color: hsl(120, 28%, 45%);
+}

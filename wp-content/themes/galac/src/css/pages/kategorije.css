@@ -1,0 +1,57 @@
+.main-kategorije {
+  position: relative;
+  background: linear-gradient(140deg, hsl(212, 99%, 65%), hsl(212, 77%, 45%));
+}
+.kategorije {
+  position: relative;
+  isolation: isolate;
+}
+.kategorije::after {
+  content: "";
+  position: absolute;
+  background: url("/wp-content/themes/galac/src/assets/images/page-overlay.png")
+    no-repeat center center/cover;
+
+  inset: 0;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.kategorije__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-block: 3rem;
+}
+.kategorije__boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+  gap: 1rem;
+  grid-template-rows: min-content;
+}
+.kategorija-box {
+  transition: 0.3s;
+  aspect-ratio: 1;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.222);
+  background-color: rgba(255, 255, 255, 0.067);
+  border-radius: 6px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+.kategorija-box:hover {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.09);
+  scale: 1.04;
+}
+@media (min-width: 800px) {
+  .kategorije__wrapper {
+    flex-direction: row;
+  }
+  .kategorije__boxes {
+    flex: 5;
+  }
+}
