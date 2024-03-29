@@ -12,6 +12,7 @@ function mytheme_load_scripts() {
 
     // Enqueue your theme's CSS
     wp_enqueue_style('css-style', get_theme_file_uri('/src/css/style.css'));
+    // wp_enqueue_style('css-style', get_theme_file_uri('/dist/style.css'));
 
     // Enqueue your theme's JavaScript
     wp_enqueue_script('js-script', get_theme_file_uri('/src/js/main.js'), array(), false, true);

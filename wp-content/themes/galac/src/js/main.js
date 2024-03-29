@@ -136,7 +136,7 @@ document.getElementById("emailForm").addEventListener("submit", (e) => {
 
   // Pošalji e-mail na određenu adresu
   const emailBody = `Korisnikov e-mail: ${userEmail}`;
-  const mailtoLink = `mailto:boris.galac@gmail.com?subject=Novi e-mail&body=${encodeURIComponent(
+  const mailtoLink = `mailto:inst.vidovic@gmail.com?subject=Novi e-mail&body=${encodeURIComponent(
     emailBody
   )}`;
   window.location.href = mailtoLink;
@@ -159,7 +159,7 @@ if (document.body.classList.contains("single")) {
         "Poštovani,\n\nZanimam se za navedenu ponudu. Možete mi se javiti povratno što je prije moguće da bi ostvarili suradnju. \n\nLijep Vam pozdrav!"; // Add additional text after "Poštovani,\n\n"
       const subject = encodeURIComponent(`Ponuda: ${offerHeading}`);
       const body = encodeURIComponent(bodyText);
-      const recipient = "boris.galac@gmail.com";
+      const recipient = "inst.vidovic@gmail.com";
 
       // Compose the mailto link with recipient, subject, and body
       const mailtoLink = `mailto:${recipient}?subject=${subject}&body=${body}`;
