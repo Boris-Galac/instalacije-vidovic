@@ -122,31 +122,21 @@ headerSearch.addEventListener("click", (e) => {
 });
 // EMAIL CONSULTATION
 
-document.getElementById("emailForm").addEventListener("submit", (e) => {
-  e.preventDefault(); // Spriječava slanje obrasca
+document.getElementById("emailForm").addEventListener("submit", (event) => {
+  event.preventDefault();
 
-  // Dohvati uneseni e-mail korisnika
-  const userEmail = document.getElementById("userEmail").value;
+  // Prepare email content
+  const emailSubject = ""; // You can set subject here if needed
+  const emailBody = "Poštovani,"; // Pre-filled email body
 
-  // Provjeri ispravnost e-mail adrese
-  if (!isValidEmail(userEmail)) {
-    alert("Molimo unesite ispravnu e-mail adresu.");
-    return;
-  }
+  // Construct mailto URI
+  let mailtoURI = `mailto:inst.vidovic@gmail.com?subject=${encodeURIComponent(
+    emailSubject
+  )}&body=${encodeURIComponent(emailBody)}`;
 
-  // Pošalji e-mail na određenu adresu
-  const emailBody = `Korisnikov e-mail: ${userEmail}`;
-  const mailtoLink = `mailto:inst.vidovic@gmail.com?subject=Novi e-mail&body=${encodeURIComponent(
-    emailBody
-  )}`;
-  window.location.href = mailtoLink;
+  // Open default email client
+  window.open(mailtoURI);
 });
-
-// Funkcija za provjeru ispravnosti e-mail adrese
-function isValidEmail(email) {
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return emailRegex.test(email);
-}
 
 if (document.body.classList.contains("single")) {
   //// OFFER GMAIL CONTACT FORM

@@ -8,6 +8,9 @@
   display: flex;
   justify-content: space-between;
 }
+.header__logo-icon {
+  width: min(100%, 48px);
+}
 .nav__link {
   color: var(--white);
 }

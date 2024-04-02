@@ -34,10 +34,10 @@
                                 </div>
                             </div>
                             <div class="contact-info">
-                                <a class="contact-info__contact" href="tel:+385996682736"><img
+                                <a class="contact-info__contact" href="tel:+385989274766"><img
                                         src="/wp-content/themes/galac/src/assets/icons/phone-icon.svg"
                                         alt="phone icon" />
-                                    +385996682736</a>
+                                    +385989274766</a>
                                 <a class="contact-info__contact" href="mailto:ured@instalacije-vidovic.hr"><img
                                         src="/wp-content/themes/galac/src/assets/icons/mail-icon.svg"
                                         alt="mail icon" />ured@instalacije-vidovic.hr</a>
@@ -366,6 +366,18 @@
     </section>
     <!-- GALERIJA SECTION -->
     <?php get_template_part('template-parts/content', 'galerija') ?>
+    <!-- BLOG SECTION -->
+    <section class="novosti">
+        <img class="novosti-overlay" src="/wp-content/themes/galac/src/assets/images/novosti-overlay-img.jpg"
+            aria-hidden="true">
+        <div class="container">
+            <h2 class="h2-heading h2-heading--dark">Novosti</h2>
+            <div class="novosti__inner-wrapper">
+                <a class="novosti-btn" href="<?php echo site_url('novosti') ?>">Odi na novosti <img
+                        src="/wp-content/themes/galac/src/assets/icons/novosti-arrow-icon.svg" aria-hidden="true"></a>
+            </div>
+        </div>
+    </section>
     <!-- CONTACT SECTION -->
     <?php get_template_part('template-parts/content', 'contact') ?>
 </main>

@@ -23,10 +23,8 @@
                     ponudu, slobodno nam se javite!</p>
                 <div class="consult__inner-wrapper ui-wrapper">
                     <form class="consult-email" id="emailForm">
-                        <input type="email" id="userEmail" class="consult-mail__input" placeholder="mail@gmail.com"
-                            required />
                         <button type="submit" class="consult-mail__submit-btn">
-                            Zatraži ponudu
+                            Pošalji upit
                             <img src="/wp-content/themes/galac/src/assets/icons/send-icon.svg" aria-hidden="true" />
                         </button>
                     </form>
@@ -36,24 +34,24 @@
             <div class="contact__row contact__row--second">
                 <div class="contact-info-socials">
                     <div class="contact-info-row contact-info-row--first">
-                        <a href="#"><img src="/wp-content/themes/galac/src/assets/icons/phone-icon.svg"
+                        <a href="tel:+385989274766"><img src="/wp-content/themes/galac/src/assets/icons/phone-icon.svg"
                                 alt="phone icon" />
                             +385 98 927 4766</a>
                         <span><img src="/wp-content/themes/galac/src/assets/icons/location-icon.svg" alt="phone icon" />
                             Put Gospe od Dračin 1, Kaštel Lukšić</span>
-                        <a href="#"><img src="/wp-content/themes/galac/src/assets/icons/mail-icon.svg"
-                                alt="phone icon" />
+                        <a href="mailto:ured@instalacije-vidovic.hr"><img
+                                src="/wp-content/themes/galac/src/assets/icons/mail-icon.svg" alt="phone icon" />
                             ured@instalacije-vidovic.hr</a>
                     </div>
                     <div class="contact-info__separator"></div>
                     <div class="contact-info-row contact-info-row--second">
                         <span class="contact-info__heading">Možete nas naći i na:</span>
                         <div class="contact-info__socials">
-                            <a href="#"><img src="/wp-content/themes/galac/src/assets/icons/fb-icon.svg"
+                            <a target="_blank" href="https://www.facebook.com/bazeniwellness"><img
+                                    src="/wp-content/themes/galac/src/assets/icons/fb-icon.svg"
                                     aria-hidden="true" /></a>
-                            <a href="#"><img src="/wp-content/themes/galac/src/assets/icons/linkedin-icon.svg"
-                                    aria-hidden="true" /></a>
-                            <a href="#"><img src="/wp-content/themes/galac/src/assets/icons/instagram-icon.svg"
+                            <a target="_blank" href="https://www.instagram.com/bazeni_instalacije_vidovic/"><img
+                                    src="/wp-content/themes/galac/src/assets/icons/instagram-icon.svg"
                                     aria-hidden="true" /></a>
                         </div>
                     </div>

@@ -146,3 +146,16 @@ button {
 .pogledaj-proizvod-btn:hover {
   background-color: hsl(120, 28%, 45%);
 }
+.novosti-btn {
+  display: flex;
+  gap: 0.6rem;
+  color: var(--dark-font);
+  align-items: center;
+  outline: 2px solid rgb(73, 80, 89);
+  padding-block: 1rem;
+  background-color: #fff;
+  padding-inline: 2rem;
+  width: max-content;
+  margin-inline: auto;
+  margin-block: 3rem;
+}
